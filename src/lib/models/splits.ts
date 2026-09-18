@@ -6,11 +6,11 @@ export type ISplits = {
   creditor: string;
   debtor: string;
   amount: number;
-  groupID: ObjectId;
+  groupId: ObjectId;
   createdAt: Date;
-  isResolved: boolean;
+  createdBy: string;
   description: string;
-  isApproved: boolean;
+  status: "APPROVAL_PENDING" | "APPROVED" | "RESOLVED" | "APPROVAL_REJECTED";
 }
 
 export const splitsCollection = db.collection<ISplits>("splits");
