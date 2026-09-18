@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 import { ObjectId } from "mongodb";
+import { sendInvitationTemplate } from "@/lib/template";
 
 const transporter = nodemailer.createTransport({
   service: "gmail",

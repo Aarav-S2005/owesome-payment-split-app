@@ -1,6 +1,4 @@
-
-
-const sendInvitationTemplate = (inviter:string, groupName: string, link: string) => {
+export const sendInvitationTemplate = (inviter:string, groupName: string, link: string) => {
   return `<!DOCTYPE html>
 <html lang="en">
 <body style="margin: 0; padding: 30px 15px; background-color: #f4f5f7; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">

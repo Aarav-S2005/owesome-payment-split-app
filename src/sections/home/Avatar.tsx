@@ -1,9 +1,7 @@
-
-
-export default async function Avatar({char}: {char: string}) {
+export default function Avatar({ char }: { char: string }) {
   return (
-    <div className={"rounded-full bg-accent p-2 px-4 text-accent-foreground"}>
-      {char}
+    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-accent text-accent-foreground font-bold flex items-center justify-center text-sm sm:text-base shadow-sm shrink-0 select-none">
+      {char || "?"}
     </div>
-  )
+  );
 }
